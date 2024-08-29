@@ -1,0 +1,11 @@
+name: StarSubscriptions
+version: '${project.version}'
+main: net.resolutemc.starsubscriptions.StarSubscriptions
+api-version: '1.21'
+depend:
+  - PlaceholderAPI
+commands:
+  Subscription:
+    description: Main Plugin Command
+    permission: StarSubscriptions.Command.Subscription
+    aliases: sub

@@ -1,0 +1,27 @@
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+#                                             💻Star Subscriptions Gui Config💻
+#                                                  🔥Coded By Mike3132🔥
+#                                             💻Star Subscriptions Gui Config💻
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+
+#✍✍✍✍ This file handles everything about the welcome gui if you have it enabled in the main plugin config.✍✍✍✍
+#✍✍✍✍ You can change anything here to be whatever custom stuff you want.✍✍✍✍
+#✍✍✍✍ The plugin will automatically parse any placeholder api placeholders you use such as %player_name% ✍✍✍✍
+
+
+# Here you can set the title that appears in the gui.
+# If you are using a custom resource pack such system such as Oraxen or Itemstadder you can put the placeholders here.
+# You can also put the unicode for resource pack images in the title
+# GENERAL EXAMPLE: ""&2Welcome &5%player_name% &2To the server""
+# ORAXEN EXAMPLE: "&f%oraxen_neg_shift_64%%oraxen_star_subscriptions_gui%"
+# ITEMSADDER EXAMPLE: ":offset_-16::subscriptions_menu:""
+Gui-Title: "&f%oraxen_neg_shift_64%%oraxen_star_subscriptions_gui%"
+
+# Here is where you can specify what items you want the border of the gui to be.
+# If you don't want any items just put AIR
+Gui-Border-Item: BEACON
+
+# Should the players inventory get cleared when the gui opens?
+# *NOTE* The player inventory gets put into memory and then given back the same tick the gui is closed
+# *NOTE* Players will NOT lose items due to this, it's only to make the gui look cleaner for full screen overlays
+Player-Inventory-Clear: true

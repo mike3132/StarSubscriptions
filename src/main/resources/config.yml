@@ -1,0 +1,53 @@
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+#                                                 💻Star Subscriptions Config💻
+#                                                  🔥Coded By Mike3132🔥
+#                                                 💻StarSubscriptions Config💻
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+
+Version: 'Version 1.0'
+ConfigVersion: '1.0'
+##### WARNING: DO NOT CHANGE ANYTHING ABOVE THIS LINE IT WILL BREAK THE PLUGIN!#####
+
+#✍✍✍✍✍Permissions✍✍✍✍✍
+# StarSubscriptions.Command.Subscription.Admin -> Access to all admin commands in the plugin
+# StarSubscriptions.Command.Subscription -> Access to main plugin commands (Give this to players)
+# StarSubscriptions.Command.Subscription.Help -> Access to plugin help command (Give this to players)
+# Subscriptions.Active.Daily -> Access for the plugin to remove a remaining day when the player logs in (Given it's a new day)
+#✍✍✍✍✍Permissions✍✍✍✍✍
+
+#####You can Modify the following how you wish#####
+
+# How often should the plugin save players subscription amounts and also cache the players who have already claimed their daily reward
+# (This is in server ticks. 20 ticks = 1 second) (The default of 6000 is every 5 minutes)
+Global-Save-Interval: 6000
+
+# The delay for the amount to be taken from the player each new day they log into the server and have an active subscription
+# (This is in server ticks. 20 ticks = 1 second) (Set this to 0 to disable the delay and make it instant)
+Join-Delay-Time: 100
+
+# The amount of points to take from the player each new day they log into the server (You MUST use whole numbers)
+Join-Amount-To-Take: 1
+
+#➳➳➳➳➳ Daily GUI ➳➳➳➳➳
+# Should the plugin show a gui when the player joins the server who has an active subscription?
+# *NOTE* If you set this to false nothing else with the gui will work.
+# You can configure everything about the gui in the gui_config.yml
+Daily-Gui-Enabled: true
+
+#➳➳➳➳➳ Daily Rewards ➳➳➳➳➳
+# This is a list of all actions that are executed when the player logs in for the first time on a new day (These are ran as console commands)
+# You can add as many items as you want here just follow the formatting of the preset lines.
+# The plugin will automatically parse any placeholder api placeholders you use such as %player_name%
+Daily-Rewards:
+  - Broadcast &2%player_name% &3Has claimed their daily reward
+  - give %player_name% diamond 10
+  - money give %player_name% 10
+
+
+#See messages.yml for all configurable plugin messages
+#♏ If you have any questions please join my discord, open a support ticket and @Mike3132
+#♏ https://discord.gg/ePQGvQuzG3
+#♏ Thanks for downloading and have a wonderful day
+
+#♛♛♛♛♛ END OF CONFIG ♛♛♛♛♛
+#This is the default config file.

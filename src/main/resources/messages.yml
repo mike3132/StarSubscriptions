@@ -1,0 +1,108 @@
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+#                                                 💻Star Subscriptions Messages💻
+#                                                  🔥Coded By Mike3132🔥
+#                                                 💻Star Subscriptions Messages💻
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+
+#✍✍✍✍ This file handles all messages for the plugin including the prefix.✍✍✍✍
+#✍✍✍✍ You can change anything here to be whatever custom stuff you want.✍✍✍✍
+#☠☠☠☠ DO NOT CHANGE THE "Messages:" line as this will break the plugin.☠☠☠☠
+#☠☠☠☠ ALL messages must have single quotes '' as seen in this default config.☠☠☠☠
+
+#📝📝📝📝 Placeholders 📝📝📝📝
+# %playerName% -> Returns the players name
+# %StarSubscriptions_Days% -> Internal placeholder for remaining days (Do not use this for placeholderAPI)
+# %StarSubscriptions_Days_Remaining% -> External plugin placeholder for remaining days (Use this with other plugins that support PlaceholderAPI)
+
+
+#Plugin prefix is sent before ALL messages in the plugin.
+Messages:
+  #Plugin prefix for all messages.
+  Prefix: '&6Star &eSubscriptions &a> '
+
+  #➳➳➳➳➳ Console Messages ➳➳➳➳➳
+  #Players only command
+  Player-Only: '&4ERROR: &cYou must be a player to use this command'
+
+  #➳➳➳➳➳ General Messages ➳➳➳➳➳
+  #No permission message
+  No-Permission: '&4ERROR: &cYou do not have permission to use this command'
+
+  #Not enough command arguments
+  Not-Enough-Args: "&4Error: &cYou have not supplied enough arguments for this command"
+
+  #➳➳➳➳➳ Player Messages ➳➳➳➳➳
+  #When the player types /sub help this is show to them.
+  Player-Help-Message: "&3This plugin was written by &5Mike3132 &3If you wish to see your remaining days just type /subscription"
+
+  #When a player gets given an amount by an admin this is sent to them
+  Player-Amount-Add: "&2You have been given %StarSubscriptions_Days% days"
+
+  #When a player has an amount of days removed from them
+  Player-Amount-Remove: "&2%StarSubscriptions_Days% days has been removed from you"
+
+  #The total amount of time a player has
+  Player-Amount-Total: "&3You currently have %StarSubscriptions_Days% days left"
+
+  #Sent to the player when they log in, and it's not been more than the time allowed in the config for a new day to happen
+  Player-Login-Same-Day: "&4ERROR: &cIt's still the same day you cannot claim another reward today"
+
+  #Sent to the player when they log in, and it's a new day.
+  Player-Login-New-Day: "&2It's a brand new day, You have claimed a brand new reward"
+
+  #Sent to the player when they close the gui and a reward is given
+  Player-Reward-Given: "&2You have successfully claimed today's rewards"
+
+  #➳➳➳➳➳ Admin Messages ➳➳➳➳➳
+  #Admin did not put "Time" as the first command argument
+  Not-Time-Arg: "&4Error: &cPlease use &lTIME &cas the first command argument"
+
+  #Admin did not put "Add" as the second command argument
+  Not-Add-Arg: "&4Error: &cPlease use &lADD &cas the second command argument"
+
+  #Admin did not put "Take" as the second command argument
+  Not-Take-Arg: "&4Error: &cPlease use &lTAKE &cas the second command argument"
+
+  #Admin either spelled the players name wrong or didn't put a name at all
+  Not-Player-Arg: "&4Error: &cPlease select an online player"
+
+  #Admin put something besides a number as the amount to give, or they put more than 10 billion as the amount.
+  Not-Integer: "&4Error: &cThis is not a number, Please select a whole number"
+
+  #Admin added amount to player
+  Admin-Amount-Add: "&2Successfully gave %playerName% %StarSubscriptions_Days% days"
+
+  #Admin tried to add less than what player has
+  Admin-Amount-Add-Less: "&4ERROR: &cYou cannot add less days what the player currently has"
+
+  #Admin removed amount from player
+  Admin-Amount-Remove: "&2Successfully removed %StarSubscriptions_Days% days from %playerName%"
+
+  #Admin tried to remove more than what the player has
+  Admin-Amount-Remove-More: "&4ERROR: &c%playerName% only has &2%StarSubscriptions_Days% days left"
+
+  #Admin reset total amount of days remaining the player has
+  Admin-Amount-Reset: "&2Successfully reset all remaining days for %playerName%"
+
+  #Admin tried to reset players remaining days but the player has none
+  Admin-Amount-Reset-None-Remaining: "&4ERROR: &cThis player doesn't have any remaining days"
+
+  #Admin wants to reset ALL players remaining amount of days (This includes both offline and online).
+  Admin-Global-Reset-Warning: "&eWARNING: &6This will reset all player data the plugin has. If you wish to continue please type /sub globalreset really"
+
+  #Admin reset ALL players remaining amount of days
+  Admin-Global-Reset: "&2Successfully reset all players data."
+
+  #Admin reset ALL players remaining amount of days didn't type really at the end
+  Admin-Global-Reset-Invalid-Arg: "&4ERROR: &cThis is not a valid command arg"
+
+  #The total amount of time target player has
+  Target-Player-Amount-Total: "&3%playerName% has %StarSubscriptions_Days% days left"
+
+
+  #See config.yml for permissions, and other plugin configurations
+  #♏ If you have any questions please join my discord, open a support ticket and @Mike3132
+  #♏ https://discord.gg/ePQGvQuzG3
+  #♏ Thanks for downloading and have a wonderful day
+  #♛♛♛♛♛ End of messages.yml ♛♛♛♛♛
+  #This is the default messages file.
