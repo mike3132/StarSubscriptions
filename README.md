@@ -1,1 +1,1 @@
-Blueseph needs to do graphics for this
+Blueseph needs to do graphics for this readme
